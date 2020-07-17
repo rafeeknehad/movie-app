@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.moviesdetailactivity"
+    android:id="@+id/Nestedscrollview">
+
+    <RelativeLayout
+        android:id="@+id/Relativeid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/imageviewmovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/textviewtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/floatingbutton"
+            android:src="@drawable/ic_baseline_favorite_24"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/textviewtitle"
+            android:layout_below="@+id/imageviewmovies"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/textdate"
+            android:layout_below="@+id/textviewtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_below="@id/textdate"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:progress="80"
+            android:progressDrawable="@drawable/circle"
+            />
+
+        <TextView
+            android:id="@+id/progresstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress_circular"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="-35dp"
+            android:text="80%"/>
+
+        <TextView
+            android:id="@+id/Overview"
+            android:text="Overview"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/progress_circular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/Overviewtxt"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/Overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp">
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/examplecardview_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:ellipsize="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:maxLines="1"
+            android:text="The Title"
+            android:id="@+id/examplecardview_titletxt"
+            android:layout_toEndOf="@+id/examplecardview_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:inputType="text"
+            android:layout_toRightOf="@+id/examplecardview_image" />
+
+
+        <TextView
+            android:id="@+id/examplecardview_release_datetxt"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="15dp"
+            android:text="The Release Date "
+            android:layout_toEndOf="@+id/examplecardview_image"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_below="@+id/examplecardview_titletxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/examplecardview_image" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
